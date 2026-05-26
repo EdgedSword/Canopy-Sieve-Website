@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" data-light-theme="light" data-dark-theme="dark">
+  <head>
+    <base href="../../" />
+    <meta property="og:site_name" content="Canopy Sieve" />
+    <meta property="og:title" content="Why I Built a Safari Ad Blocker" />
+    <meta name="twitter:title" content="Why I Built a Safari Ad Blocker" />
+    <meta property="og:description" content="If you’ve ever installed an ad blocker on Safari and still seen ads slip through, you’ve run into a limit most people don’t know exists: Apple caps each Safari Content Blocker extension at 150,000 rules." />
+    <meta name="twitter:description" content="If you’ve ever installed an ad blocker on Safari and still seen ads slip through, you’ve run into a limit most people don’t know exists: Apple caps each Safari Content Blocker extension at 150,000 rules." />
+    <meta property="og:url" content="https://example.com/blog/why-i-built-a-safari-ad-blocker" />
+    <meta name="twitter:domain" content="example.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:dnt" content="on" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="If you’ve ever installed an ad blocker on Safari and still seen ads slip through, you’ve run into a limit most people don’t know exists: Apple caps each Safari Content Blocker extension at 150,000 rules." />
+    <meta name="author" content="Developer" />
+    <meta name="generator" content="Ignite v0.6.0" />
+    <title>Why I Built a Safari Ad Blocker</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="css/ignite-core.min.css" rel="stylesheet" />
+    <link href="https://example.com/blog/why-i-built-a-safari-ad-blocker" rel="canonical" />
+    <link href="images/favicon.png" rel="icon" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+:root {
+    --primary-color: #2563eb;
+    --primary-rgb: 37, 99, 235;
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color-scheme: light dark;
+}
+</style>
+    <meta name="apple-itunes-app" content="app-id=6772777541" />
+  </head>
+  <body data-site-classes="site-shell">
+    <header>
+      <nav class="site-header navbar navbar-expand-md">
+        <div class="container flex-wrap flex-lg-nowrap">
+          <div class="me-2 me-md-auto">
+            <a href="index.html" class="brand-link d-inline-flex align-items-center navbar-brand"><span class="brand-name">Canopy Sieve</span></a>
+          </div>
+          <button type="button" class="navbar-toggler btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav mb-2 mb-md-0 col justify-content-end">
+              <li class="nav-item"><a href="#screenshots" class="nav-link text-nowrap">Screenshots</a></li>
+              <li class="nav-item"><a href="#features" class="nav-link text-nowrap">Features</a></li>
+              <li class="nav-item"><a href="#reviews" class="nav-link text-nowrap">Reviews</a></li>
+              <li class="nav-item"><a href="https://apps.apple.com/app/id6772777541" class="text-nowrap btn btn-sm btn-primary">Download</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="site-main">
+      <div class="ig-main-content">
+        <div class="blog-post-page">
+          <div class="container blog-article-page">
+            <a href="blog/index.html" class="blog-back-link">Back to Blog</a>
+            <h1 class="blog-post-title">Why I Built a Safari Ad Blocker</h1>
+            <div class="blog-post-meta">
+              <p class="blog-post-meta-item">May 26, 2026</p>
+              <p class="blog-post-meta-item">Developer</p>
+              <p class="blog-post-meta-item">2 min read</p>
+            </div>
+            <div class="blog-article-body">
+              <h1>Why I Built a Safari Ad Blocker (And Why Four Extensions Are Better Than One)</h1>
+              <p>If you’ve ever installed an ad blocker on Safari and still seen ads slip through, you’ve run into a limit most people don’t know exists: Apple caps each Safari Content Blocker extension at 150,000 rules.</p>
+              <p>That sounds like a lot. It isn’t, not anymore.</p>
+              <p>Modern ad networks, trackers, and malware domains number in the hundreds of thousands. The most comprehensive filter lists combined exceed 400,000 rules. A single extension can’t come close to covering them all, so most blockers have to pick and choose, leaving real gaps in your protection.</p>
+              <h2>The Four-Extension Approach</h2>
+              <p>Canopy Sieve works around this limit by running four coordinated Safari extensions simultaneously, each handling a different threat category:</p>
+              <ul>
+                <li><strong>Basic</strong>: ads and trackers (EasyList, EasyPrivacy, AdGuard Tracking Protection, Peter Lowe’s)</li>
+                <li><strong>Annoyances</strong>: cookie banners, pop-ups, social widgets (Fanboy Annoyances, AdGuard Annoyances)</li>
+                <li><strong>Security</strong>: malware domains and phishing sites (URLhaus, Phishing Army, Spam404)</li>
+                <li><strong>Social</strong>: social media tracking embeds (AdGuard Social Media)</li>
+              </ul>
+              <p>Together they cover over 400,000 rules. The most comprehensive blocking available within Safari’s native extension system.</p>
+              <h2>No VPN. No Proxy. No Data.</h2>
+              <p>Every other approach to mobile ad blocking, VPN-based blockers, DNS-based filters, proxy apps, routes your traffic through an intermediary. That intermediary can see every site you visit.</p>
+              <p>Safari Content Blockers work differently. The ruleset lives on your device. Safari applies the rules locally before any request leaves your phone. Canopy never sees your browsing, it hands Safari a list and steps back.</p>
+              <h2>The Allowlist</h2>
+              <p>Some sites genuinely need their scripts to function, payment processors, school login portals, government sites. Canopy includes a simple allowlist: enter a root domain and every extension immediately stops blocking it. No re-downloading, no restart required.</p>
+              <h2>What’s Next</h2>
+              <p>The blocklists update automatically in the background, once daily, silently, with no action needed on your part. As new ad networks emerge and new phishing domains appear, Canopy stays current without interrupting you.</p>
+              <p>If a site you use is broken, the fix is almost always adding it to the allowlist. If you have questions, the best place to start is the Allowlist section inside the app.</p>
+              <p><em>Canopy Sieve is free to download. If it saves you from ads every day, there’s a tip jar inside the app.</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <p class="footer-tagline">Best Safari content blocker respecting privacy</p>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="footer-links">
+            <a href="blog/index.html" class="footer-privacy-link">Blog</a>
+            <a href="privacy/index.html" class="footer-privacy-link">Privacy Policy</a>
+            <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula" class="footer-privacy-link">Terms of Service</a>
+          </div>
+          <p>Copyright 2026 Canopy Sieve. All rights reserved.</p>
+          <a href="https://kickstart.tools" class="footer-kickstart-link">Built with Kickstart</a>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/ignite-core.js"></script>
+  </body>
+</html>
